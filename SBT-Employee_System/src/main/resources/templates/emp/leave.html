@@ -12,7 +12,7 @@
 				<div class="col-md-4">
 					<div class="card paint-card">
 						<div class="card-body">
-							<p class="text-center text-custom fs-1">Leave Apply</p>
+							<p class="text-center text-custom fs-1">Annual Leave</p>
 							<div th:if="${session.succMsg}" class="text-center">
 								<p class="text-success fs-3" th:text="${session.succMsg}"></p>
 								<th:block th:text="${#session.removeAttribute('succMsg')}"></th:block>
@@ -74,7 +74,7 @@
 								<input type="hidden" name="empId" th:value="${emp.id}">
 
 								<th:block th:if="${empService.checkAssignManager(emp.id)}">
-									<button class="btn bg-custom text-white">Submit</button>
+									<button class="btn bg-custom text-white btn-color">Submit</button>
 								</th:block>
 								<th:block th:unless="${empService.checkAssignManager(emp.id)}">
 									<button class="btn bg-custom text-white disabled">Submit</button>
@@ -93,7 +93,7 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">Sl No</th>
+										<th scope="col">Emp No</th>
 										<th scope="col">Emp Name</th>
 										<th scope="col">From Date</th>
 										<th scope="col">To Date</th>

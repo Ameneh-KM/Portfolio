@@ -12,7 +12,7 @@
 				<div class="col-md-9 offset-md-1">
 					<div class="card paint-card">
 						<div class="card-body">
-							<p class="text-center text-custom fs-1">View Leave Details</p>
+							<p class="text-center text-custom fs-1">View Leave Requests</p>
 							<div th:if="${session.succMsg}" class="text-center">
 								<p class="text-success fs-3" th:text="${session.succMsg}"></p>
 								<th:block th:text="${#session.removeAttribute('succMsg')}"></th:block>
@@ -25,9 +25,9 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">Sl No</th>
+										<th scope="col">Emp No</th>
 										<th scope="col">Emp Name</th>
-										<th scope="col">Mob No</th>
+										<th scope="col">Mobile No</th>
 										<th scope="col">Email</th>
 										<th scope="col">From Date</th>
 										<th scope="col">To Date</th>

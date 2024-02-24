@@ -12,7 +12,7 @@
 				<div class="col-md-4">
 					<div class="card paint-card">
 						<div class="card-body">
-							<p class="text-center text-custom fs-1">Helpdesk</p>
+							<p class="text-center text-custom fs-1">Query</p>
 							<div th:if="${session.succMsg}" class="text-center">
 								<p class="text-success fs-5" th:text="${session.succMsg}"></p>
 								<th:block th:text="${#session.removeAttribute('succMsg')}"></th:block>
@@ -45,7 +45,7 @@
 								</div>
 								<input type="hidden" th:value="${emp.id}" name="empId">
 
-								<button class="btn bg-custom text-white">Submit</button>
+								<button class="btn bg-custom text-white btn-color">Submit</button>
 							</form>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">Sl No</th>
+										<th scope="col">Emp No</th>
 										<th scope="col">Emp Name</th>
 										<th scope="col">Email</th>
 										<th scope="col">Messages</th>

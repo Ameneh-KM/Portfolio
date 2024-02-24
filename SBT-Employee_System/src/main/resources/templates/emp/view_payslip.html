@@ -13,7 +13,7 @@
 				<div class="col-md-9 offset-md-1">
 					<div class="card paint-card">
 						<div class="card-body">
-							<p class="text-center text-custom fs-1">View Payslip Details</p>
+							<p class="text-center text-custom fs-1">Payslip</p>
 							<div th:if="${session.succMsg}" class="text-center">
 								<p class="text-success fs-3" th:text="${session.succMsg}"></p>
 								<th:block th:text="${#session.removeAttribute('succMsg')}"></th:block>
@@ -26,7 +26,7 @@
 							<table class="table">
 								<thead>
 									<tr>
-										<th scope="col">Sl No</th>
+										<th scope="col">Emp No</th>
 										<th scope="col">Full Name</th>
 										<th scope="col">Role</th>
 										<th scope="col">Mob No</th>

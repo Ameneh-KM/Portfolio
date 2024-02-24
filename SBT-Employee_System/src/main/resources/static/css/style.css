@@ -23,9 +23,32 @@
 }
 
 .bg-custom {
-	background-color: #00577c;
+	background-color: #0b253c;
 }
 
 .text-custom {
 	color: #00577c;
+}
+
+.btn-color{
+	background-color:#1fc1c3;
+}
+
+.color-yellow{
+	color:#fcb900;
+}
+.color-red{
+	color:#cf2e2e;
+}
+.color-green{
+	color:#00d084;
+}
+.color-pink{
+	color:#f78da7;
+}
+.color-purple{
+	color:#9b51e0;
+}
+.color-blue{
+	color:#0693e3;
 }
